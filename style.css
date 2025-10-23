@@ -1,0 +1,90 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* Part 1: Button hover effect */
+button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px 0;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #2ecc71;
+  transform: scale(1.05);
+}
+
+/* Part 1: Pulse animation */
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+.pulsing {
+  animation: pulse 2s infinite ease-in-out;
+}
+
+/* Part 3: Animated Box */
+#animatedBox {
+  width: 100px;
+  height: 100px;
+  background-color: #e74c3c;
+  margin-top: 20px;
+  border-radius: 8px;
+  transition: transform 0.5s ease;
+}
+
+.animate-transform {
+  transform: rotate(360deg) scale(1.2);
+}
+
+/* Part 2: Counter Section */
+.counterSection {
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+/* Form Styles */
+form {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+input {
+  padding: 8px;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  height: 18px;
+  margin: 3px 0 0 0;
+}
+
+#formMessage {
+  margin-top: 20px;
+  font-weight: bold;
+}

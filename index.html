@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Interactive Web Page Assignment</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Interactive Web Page with CSS & JavaScript</h1>
+
+  <!-- Part 1: Button with hover and pulse animation -->
+  <button id="pulseBtn">Toggle Pulse Animation</button>
+
+  <!-- Part 3: Box that animates when button clicked -->
+  <div id="animatedBox"></div>
+
+  <!-- Part 2: Counter display and button -->
+  <div class="counterSection">
+    <p>Counter: <span id="counterValue">0</span></p>
+    <button id="incrementBtn">Increment Counter</button>
+  </div>
+
+  <!-- Simple form for validation -->
+  <form id="userForm" novalidate>
+    <label for="username">Username (min 5 chars):</label>
+    <input type="text" id="username" name="username" />
+    <p id="usernameError" class="error"></p>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" />
+    <p id="emailError" class="error"></p>
+
+    <button type="submit">Submit</button>
+    <p id="formMessage"></p>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
